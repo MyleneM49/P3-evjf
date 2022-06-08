@@ -1,0 +1,60 @@
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  border: 7px solid;
+  margin: auto;
+  position: relative;
+  padding: 2rem;
+  color: #8f8f8f;
+  background-clip: padding-box;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -10px;
+  /* border-radius: inherit; */
+  background: linear-gradient(
+    230.46deg,
+    #5f5ff3 -2.98%,
+    #b67dff 68.14%,
+    #ff83cd 104.54%
+  );
+}
+
+.gradientDiv {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  padding: 2rem;
+  color: #8f8f8f;
+  background: #ddd;
+  background-clip: padding-box;
+  border-radius: 150px;
+}
+.gradientDiv:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -10px;
+  border-radius: inherit;
+  background: linear-gradient(
+    230.46deg,
+    #5f5ff3 -2.98%,
+    #b67dff 68.14%,
+    #ff83cd 104.54%
+  );
+}
