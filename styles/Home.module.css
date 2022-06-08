@@ -2,13 +2,10 @@
   padding: 0 2rem;
   background-color: orange;
   width: 100%;
-  font-family: "Kodchasan", sans-serif;
 }
 
 .navbar {
   text-align: center;
-  /* color: #a53248; */
-  font-family: "Kodchasan", sans-serif;
 }
 
 .main {
@@ -19,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: green;
 }
 
 .footer {
