@@ -1,6 +1,9 @@
-import { createContext } from "react";
+import { createContext, useMemo } from "react";
+import { useLocalStorage } from "react-use";
+// import LandingPage from "../public/LandingPage.jpg";
+// import PageAccueil from "../public/pageAccueil.jpg";
 
-const LandingPageContext = createContext();
+export const LandingPageContext = createContext();
 
 export default function LandingPageContextProvider({ children }) {
   const LandingPage = {
@@ -17,6 +20,12 @@ export default function LandingPageContextProvider({ children }) {
     backgroundPosition: "center center",
     backgroundAttachment: "fixed",
   };
-
-  return <LandingPageContext.Provider>{children}</LandingPageContext.Provider>;
+  const [open, setOpen] = useLocalStorage("open", true);
+  //   const pageStyle = open ? pageNightStyle : pageDayStyle;
+  const openRendering = useMemo(() => ({ open, setOpen }), [open]);
+  return (
+    <LandingPageContext.Provider value={openRendering}>
+      {children}
+    </LandingPageContext.Provider>
+  );
 }
