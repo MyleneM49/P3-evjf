@@ -1,7 +1,5 @@
 import { createContext, useMemo } from "react";
 import { useLocalStorage } from "react-use";
-// import LandingPage from "../public/LandingPage.jpg";
-// import PageAccueil from "../public/pageAccueil.jpg";
 
 export const LandingPageContext = createContext();
 
@@ -21,7 +19,6 @@ export default function LandingPageContextProvider({ children }) {
     backgroundAttachment: "fixed",
   };
   const [open, setOpen] = useLocalStorage("open", true);
-  //   const pageStyle = open ? pageNightStyle : pageDayStyle;
   const openRendering = useMemo(() => ({ open, setOpen }), [open]);
   return (
     <LandingPageContext.Provider value={openRendering}>
