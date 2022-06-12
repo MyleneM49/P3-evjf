@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import LogoGlamS2 from "../public/LogoGlamS2.png";
+// import LogoUniSeul from "../public/LogoUniSeul.jpg";
 import style from "./style/Header.module.css";
 
 export default function Header() {

@@ -15,16 +15,18 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1 className={styles.title}></h1>
+          <h2 className={styles.title}>ACCUEIL</h2>
           <Image src={accueilPage} alt="fondaccueil" layout="responsive" />
           {/* <div className="index">
             <div className={`wrapperImage ${anim ? "animclasse" : ""}`} />
             <button onClick={classToggle}>Click here</button>
           </div> */}
           <div className={styles.prix}>
-            Durée : 1h30 Tarif: 50€ par personne Durée : 1h30 Tarif: 50€ par
-            personne Durée : 1h30 Tarif: 50€ par personne Durée : 1h30 Tarif:
-            50€ par personne Durée : 1h30 Tarif: 50€ par personne
+            <p>Durée : 1h30 Tarif: 50€ par personne</p>
+            <p>Durée : 1h30 Tarif: 50€ par personne</p>
+            <p>Durée : 1h30 Tarif: 50€ par personne</p>
+            <p>Durée : 1h30 Tarif: 50€ par personne</p>
+            <p>Durée : 1h30 Tarif: 50€ par personne</p>
           </div>
         </main>
       </div>
