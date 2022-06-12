@@ -8,13 +8,7 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <main className={styles.main}>
-          <Image
-            src={LandingPage}
-            alt="LandingPage"
-            width={1000}
-            height={1500}
-            layout="responsive"
-          />
+          <Image src={LandingPage} alt="LandingPage" layout="responsive" />
           <h1 className={styles.title}>LANDING PAGE</h1>
           <button></button>
         </main>
