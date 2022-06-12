@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoGlamS2 from "../public/LogoGlamS2.png";
-// import LogoUniSeul from "../public/LogoUniSeul.jpg";
+// import LogoGlamS2 from "../public/LogoGlamS2.png";
+import LogoUniSeul from "../public/LogoUniSeul.jpg";
 import style from "./style/Header.module.css";
 
 export default function Header() {
@@ -9,9 +9,9 @@ export default function Header() {
     <div className={style.headerContainer}>
       <div className={style.logoTitleContainer}>
         <div className={style.itemLeft}>
-          <Image src={LogoGlamS2} alt="Logo" width={"100%"} height={"100%"} />
+          <Image src={LogoUniSeul} alt="Logo" width={250} height={250} />
         </div>
-        <h1 className={style.itemRight}>EVJF Burlesque</h1>
+        <h1 className={style.itemRight}>Fémini T Party</h1>
       </div>
       <div className={style.liens}>
         <Link href="/">Accueil</Link>

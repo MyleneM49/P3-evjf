@@ -8,22 +8,28 @@
 }
 
 .logoTitleContainer {
-  margin: 2%;
+  margin: 4%;
+  /* padding: 2% 0; */
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   font-size: 40px;
+  font-weight: bold;
 }
 
 .itemLeft {
-  width: 100px;
+  width: 120px;
   border-radius: 150px;
   overflow: hidden;
+  /* border: solid; */
+  /* padding: 10px; */
 }
+
 .itemRight {
   width: 90%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 5%;
 }
 
