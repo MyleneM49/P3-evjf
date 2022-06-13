@@ -9,20 +9,21 @@
 
 .logoTitleContainer {
   margin: 4%;
-  /* padding: 2% 0; */
   display: flex;
   justify-content: space-around;
-  /* align-items: flex-end; */
   font-size: 40px;
   font-weight: bold;
 }
 
 .itemLeft {
-  width: 120px;
-  border-radius: 150px;
+  position: absolute;
   overflow: hidden;
-  /* border: solid; */
-  /* padding: 10px; */
+  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+  top: -80px;
+  left: -60px;
+  /* background-size: scale-down; */
 }
 
 .itemRight {

@@ -13,11 +13,7 @@ export default function Home() {
       <div className={styles.container}>
         <main className={styles.main}>
           <h1 className={styles.title}></h1>
-          <button
-            className={styles.button}
-            // "w-24	h-24 -mt-80 relative bg-pink-500"
-            onClick={() => h()}
-          >
+          <button className={styles.button} onClick={() => h()}>
             <Link href="/accueil">Come One</Link>
           </button>
           {/* <a className={styles.button}> */}

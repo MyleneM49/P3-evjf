@@ -9,7 +9,13 @@ export default function Header() {
     <div className={style.headerContainer}>
       <div className={style.logoTitleContainer}>
         <div className={style.itemLeft}>
-          <Image src={LogoUniSeul} alt="Logo" width={250} height={250} />
+          <Image
+            src={LogoUniSeul}
+            alt="Logo"
+            width={300}
+            height={300}
+            // layout="fixed"
+          />
         </div>
         <h1 className={style.itemRight}>Fémini T Party</h1>
       </div>
@@ -23,3 +29,4 @@ export default function Header() {
     </div>
   );
 }
+//
