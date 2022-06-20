@@ -1,93 +1,59 @@
 import Layout from "../components/layout";
-// import { useState } from "react";
-// import { useState, useEffect } from "react";
+import { useState } from "react";
+import styles from "../styles/Home.module.css";
+import HeartButton from "../components/HeartButton";
 
 export default function Formulaire() {
-  // const [activity, setActivity] = useState("");
-  // const [place, setPlace] = useState("");
-  // const [number, setNumber] = useState("");
+  const [animal, setAnimal] = useState("");
+  const [couleur, setCouleur] = useState("");
+  const [mot, setMot] = useState("");
 
-  // const handleActivityChange = (e) => {
-  //   setActivity(e.target.value);
-  // };
-  // const handlePlaceChange = (e) => {
-  //   setPlace(e.target.value);
-  // };
-  // const handleNumberChange = (e) => {
-  //   setActivity(e.target.value);
-  //};
-  // const [checked, setChecked] = usaState ("false");
-  // const [count, setCount] = useState(0);
-  // useEffect(() => {
-  //   console.log(`Youhou you clicked ${count}`);
-  // });
+  const handleAnimalChange = (e) => setAnimal(e.target.value);
+  const handleSubmit = () => {
+    alert("okayyyyy!");
+  };
 
+  // const handleAnimalChange = (e) => setAnimal(e.target.value);
+  // const handleCouleurChange = (e) => setCouleur(e.target.value);
+  // const handleMotChange = (e) => setMot(e.target.value);
+  console.log(animal, couleur, mot);
   return (
-    <Layout pageTitle="RÉSERVATIONS">
-      <div className="max-w-4xl h-auto m-auto bg-fuchsia-700 mx-4 my-6">
-        <h2 className="pageTitle">contacteMe</h2>
-        {/* {finalchoice.map(({id, activity, place, number}))} => { */}
-        <form className="bg-fuchsia-200 text-xs	flex columns-4 m-2.5 p-2.5 h-1/3">
+    <Layout>
+      <h2 className={styles.title}>RÉSERVATIONS</h2>
+      <div className="max-w-4xl min-h-full bg-fuchsia-700 mx-4 my-6 px-4 py-4">
+        <form
+          className="flex flex-col basis-1/4 bg-fuchsia-200 text-sm m-2.5 p-2.5 h-1/2 text-left"
+          onSubmit={handleSubmit}
+          // c'est Nico qui l'a ajouté
+        >
+          <label htmlFor="Choix1"> Quel est ton animal préféré? </label>
           <input
-            type="checkbox"
-            name="choice"
-            value="1"
-            id="ans1"
-            //  checked={}
-          />
-          <span id="choice1">Danse en talons</span>
-          <input type="checkbox" name="choice" value="2" id="ans2" />
-          <span id="choice2">Effeuilage Burlesque</span>
-          <input type="checkbox" name="choice" value="3" id="ans3" />
-          <span id="choice3">Chair Danse</span>
-          <input type="checkbox" name="choice" value="4" id="ans4" />
-          <span id="choice4">French Cancan</span>
-        </form>
-        <form className="bg-fuchsia-300 m-2.5 h-1/3">
-          <span id="combien">Nombres de participantes</span>
-          {/* <label htmlFor="quantity">X</label> */}
-          <input
-            type="number"
-            name="participantes"
-            id="participantes"
-            min="2"
-            max="16"
-            value="0"
+            id="Choix1"
+            type="text"
+            value={animal}
+            onChange={handleAnimalChange}
+            // handleAnimalChange={(e) => {
+            //   setAnimal(e.target.value);
+            // }}
           />
 
-          {/* // onClick={() => setCount((prevCount) => prevCount + 1)}> // Click //{" "}
-        {/* onClick={ */}
-          {/* (e) => setCount((prevCount) => prevCount + 1)
-        console.log(e.target.value);} // /> // <h1>Click Counter:</h1>
-      <h1>{count}</h1>
-      {" "}
-        <button onClick={() => setCount((prevCount) => prevCount + 1)}>
-        Click {" "}
-        </button>{" "} */}
-          {/* {nbparticipantes.map(({ id, quantity }) => (
-          <tr key={id}></tr>
+          <label htmlFor="Choix2"> Quel est ta couleur préférée?</label>
           <input
-            type="number"
-            name="participantes"
-            id="participantes"
-            min="2"
-            max="16"
-            value="{quantity}"
-            onClick={
-            (e) => setCount((prevCount) => prevCount + 1)
-            console.log(e.target.value);
-            }
-        ))} */}
-        </form>
-        <form className="bg-fuchsia-400 text-xs	flex columns-4 m-2.5 p-2.5 h-1/3">
-          <input type="checkbox" name="choice" value="1" id="ans1" />
-          <span id="choice1">Lyon</span>
-          <input type="checkbox" name="choice" value="2" id="ans2" />
-          <span id="choice2">Valence</span>
-          <input type="checkbox" name="choice" value="3" id="ans3" />
-          <span id="choice3">Dijon</span>
-          <input type="checkbox" name="choice" value="4" id="ans4" />
-          <span id="choice4">Grenoble</span>
+            id="Choix2"
+            type="text"
+            value={couleur}
+            onChange={(e) => setCouleur(e.target.value)}
+          />
+          <label htmlFor="Choix3">Quel est ton mot favori?</label>
+          <input
+            type="text"
+            value={mot}
+            onChange={(e) => setMot(e.target.value)}
+          />
+          <HeartButton />
+          {/* <button type="submit" className={styles.buttonForm}>
+            ok
+          </button> */}
         </form>
       </div>
     </Layout>

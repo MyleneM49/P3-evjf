@@ -1,3 +1,32 @@
+.buttonForm {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  color: #dec7cb;
+  font-size: 32px;
+  margin: auto;
+}
+
+.box {
+  width: 111px;
+  height: 111px;
+  background: orange;
+}
+
+.buttonclasse {
+  animation: anim 1s infinite;
+}
+
+@keyframes anim {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    background: red;
+  }
+}
+
 .container {
   padding: 0 5%;
   width: 100%;
@@ -17,31 +46,40 @@
   min-height: 100vh;
 }
 
-.prix {
-  width: 95%;
-  height: auto;
-  background-color: #fae2ea;
-  opacity: 80%;
-  padding: 5px;
-  margin: -335px 2.5%;
+.image {
   position: relative;
+  /* inset: -300px 0; */
+  /* top: -75px; */
+  /* top: -175px; */
+  /* inset: -400px 0; */
+  /* z-index: 0; */
 }
 
 .button {
   width: 111px;
   height: 111px;
   background-color: #d6489d;
-  z-index: 1;
-  position: relative;
-  top: 285px;
   font-size: 32px;
   font-weight: lighter;
   color: #dec7cb;
+  position: relative;
+  top: -290px;
+  /* top: 285px; */
+  /*z-index: 1; */
 }
 
-.image {
-  top: -75px;
+.prix {
+  width: 95%;
+  /* height: auto; */
+  height: 300px;
+  background-color: #fae2ea;
+  opacity: 80%;
+  padding: 20px 30px;
+  margin: -335px 2.5%;
   position: relative;
+  font-size: 16px;
+  text-align: left;
+  overflow: scroll;
 }
 
 @media (min-width: 600px) {
@@ -53,6 +91,10 @@
     height: 175px;
     top: 475px;
   }
+}
+
+.select {
+  width: 200px;
 }
 
 $optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;

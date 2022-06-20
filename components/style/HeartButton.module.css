@@ -1,24 +1,88 @@
-.container {
-  width: 25vw;
-  height: 25vh;
-  background-color: grey;
-  /* display: flex;
-  place-items: center; 
-  align-items: center;*/
-
-  display: grid;
-  justify-content: center;
-  align-content: center;
+.noclick {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
+  position: relative;
+  margin-top: 10%;
+  /* margin: 5% auto; */
 }
 
-.square {
-  width: 10rem;
-  height: 10rem;
-  background-color: pink;
+.clickon {
+  width: 111px;
+  height: 111px;
+  background: #d64ffd;
+  /* opacity: 0.5; */
+  font-size: 22px;
+  font-weight: lighter;
+  color: #dec7cb;
+  border-style: solid;
+  border-color: #d6489d;
+  margin-top: 10%;
+}
 
+/* .open {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
   position: relative;
-  transform: rotate(45deg);
-  animation: beater 10s linear infinite;
+  border: solid;
+}
+
+.close {
+  background: grey;
+} */
+/* .button {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
+  position: relative;
+  border: solid;
+  /* top: -290px;
+} */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: #d6489d;
+  background: orange;
+} */
+
+.box {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
+  position: relative;
+  border: solid;
+}
+
+.animclasse {
+  animation: anim 4s infinite;
+}
+
+@keyframes anim {
+  from {
+    /* transform: scale(1); */
+  }
+  to {
+    /* transform: scale(2) rotate(90deg); */
+    background: red;
+  }
 }
 
 /* .square::before {
