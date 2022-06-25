@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: radial-gradient(#ffffff, #fdd0dd);
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a:hover {
+  color: #8c5c79;
+  background-color: white;
+  opacity: 0.5;
+  padding: 5px 10px;
+  /* width: 15%; */
+  /* color: inherit;
+  text-decoration: none; */
+}
+
+* {
+  box-sizing: border-box;
+}
