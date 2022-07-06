@@ -4,7 +4,9 @@
   background: #d6489d;
   color: #dec7cb;
   font-size: 32px;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 285px;
 }
 
 .box {
@@ -39,11 +41,6 @@
 
 .image {
   position: relative;
-  /* inset: -300px 0; */
-  /* top: -75px; */
-  /* top: -175px; */
-  /* inset: -400px 0; */
-  /* z-index: 0; */
 }
 
 .button {
@@ -54,16 +51,11 @@
   font-weight: lighter;
   color: #dec7cb;
   margin: auto;
-  /* top: -290px; */
-  /* top: 285px; */
   position: relative;
-  /* top: -650px; */
-  /*z-index: 1; */
 }
 
 .prix {
   width: 95%;
-  /* height: auto; */
   height: 300px;
   background-color: #fae2ea;
   opacity: 80%;
@@ -88,12 +80,31 @@
 
 .select {
   width: 200px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .containeract {
   background: green;
   display: flex;
   flex-wrap: wrap;
+}
+
+.testbg2 {
+  background-image: url("../public/imgAct.jpg");
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.testbg {
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  background-image: url("../public/APrognee.png");
+  object-fit: none;
 }
 
 .min {
@@ -103,43 +114,30 @@
   border-radius: 100px;
   border: solid;
   border-color: #8c5c79;
-  position: relative;
   overflow: hidden;
-  /* object-fit: cover; */
-  /* width: 10%;
-  height: 500px; */
-  /* background: blue; 
-  display:flex;
-   flex-direction:row;
-   justify-content:center;
-   align-items:center;
-   height:100vh;*/
+  position: relative;
+  padding-bottom: 200px;
 }
 
 .bg {
-  background-image: url("../public/imgAct.jpg");
-  width: 150px;
-  height: 500px;
-  object-fit: contain;
-  /* margin-right: 100px;
-  margin-bottom: 200px;
+  background-image: url("../public/APrognee.png");
   object-fit: none;
-  object-fit: cover;
-  object-position: 80% 50%;*/
+  width: 100%;
+  height: 500px;
+  object-position: 80% 50%;
 }
 
 .full {
-  /*background-image: url("../public/imgAct.jpg");
-  background-size: cover;*/ /* Resize the background image to cover the entire container */
   width: 100%;
   height: auto;
+  overflow: hidden;
   /*position: absolute;
   height: 300px;
   position: relative;*/
   /*background-repeat: repeat;
    no-repeat,
   width: 400px;*/
-  animation-duration: 4s;
+  animation-duration: 7s;
   animation-name: glissement;
 }
 
@@ -156,8 +154,11 @@
 }*/
 
 .h3 {
-  font-size: 12px;
-  color: white;
+  font-size: 8px;
+  width: 50px;
+  /*color: white;
+  position: absolute;
+  position: relative;*/
 }
 /*width: 72px;
   height: 72px;
