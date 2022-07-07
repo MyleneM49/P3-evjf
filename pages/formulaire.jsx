@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import HeartButton from "../components/HeartButton";
 
