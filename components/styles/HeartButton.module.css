@@ -1,0 +1,47 @@
+.noclick {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
+  position: relative;
+  margin-top: 10%;
+}
+
+.clickon {
+  width: 111px;
+  height: 111px;
+  background: #d64ffd;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #dec7cb;
+  border-style: solid;
+  border-color: #d6489d;
+  margin-top: 10%;
+}
+
+.box {
+  width: 111px;
+  height: 111px;
+  background: #d6489d;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: lighter;
+  color: #dec7cb;
+  position: relative;
+  border: solid;
+}
+
+.animclasse {
+  animation: anim 4s infinite;
+}
+
+@keyframes anim {
+  from {
+  }
+  to {
+    background: red;
+  }
+}
